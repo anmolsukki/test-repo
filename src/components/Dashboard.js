@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Dashboard extends Component {
   render() {
     const userData = [
-      { user: "Vipin", email: "test@gmail.com" },
-      { user: "Deepak", email: "test2@gmail.com" },
-      { user: "amit", email: "test3@gmail.com" }
+      { user: 'Vipin', email: 'test@gmail.com' },
+      { user: 'Deepak', email: 'test2@gmail.com' },
+      { user: 'amit', email: 'test3@gmail.com' }
     ];
 
     return (
@@ -13,7 +13,7 @@ class Dashboard extends Component {
         <div className="row">
           <div className="col-sm-12">
             {userData.map(user => {
-              <div>{user.email}</div>;
+              return <div>{user.email}</div>;
             })}
           </div>
         </div>
