@@ -12,8 +12,8 @@ class Dashboard extends Component {
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
-            {userData.map(user => {
-              return <div>{user.email}</div>;
+            {userData.map((user, index) => {
+              return <div key={index}>{user.email}</div>;
             })}
           </div>
         </div>
