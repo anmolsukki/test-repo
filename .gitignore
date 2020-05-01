@@ -10,6 +10,7 @@
 
 # production
 /build
+/package-lock.js
 
 # misc
 .DS_Store
